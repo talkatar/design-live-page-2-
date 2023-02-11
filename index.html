@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Live Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/dfd6d38196.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="main-layout">
+
+    <div class="main-screen" onclick="onToggleHamburger()"></div>
+    <div class="main-screen" onclick="onToggleModal()"></div>
+
+    <header class="main-header grid  ">
+        <div class="main-continer flex space-between align-center">
+            <div class="logo">Blogin</div>
+            <nav class="main-nav  ">
+                <ul class="main-menu flex  clean-list">
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn-open-hamburger" type="button" onclick="onToggleHamburger()">☰</button>
+            <button class="btn-close-hamburger" type="button" onclick="onToggleHamburger()">X</button>
+
+        </div>
+
+    </header>
+    <div class="main-content">
+        <div class="card">
+            <img class="card-image" src="images/1.png" alt="" />
+            <div class="txt-container ">
+                <h1 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+
+                <button type="button" class="btn-cont-read" onclick="onToggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-image" src="images/2.png" alt="" />
+            <div class="txt-container ">
+                <h1 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+
+                <button type="button" class="btn-cont-read" onclick="onToggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-image" src="images/3.png" alt="" />
+            <div class="txt-container ">
+                <h1 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h1>
+                <p class="card-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+
+                <button type="button" class="btn-cont-read" onclick="onToggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <section class="btn-page-container flex space-between">
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+        </section>
+    </div>
+
+    <footer class="main-footer grid">
+        <section class="footer-content flex  ">
+            <div class="logo">Blogin</div>
+            <small> &copy; 2014 Blogin.com - All Rights Reserved - Find More free Templates at Pixelhint.com </small>
+            <ul class="social-links flex clean-list">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <div class="modal closed-modal  ">
+        <button class="btn-modal btn-close-modal" type="button" onclick="onToggleModal()">X</button>
+        <h2 class="card-title">
+            Join us to get access to the latest stories!
+        </h2>
+        <div class="modal-container ">
+            <input class="btn-email-modal" type="email" placeholder="Enter Your Email">
+            <button class="btn-modal btn-submit-modal" type="submit">Submit</button>
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

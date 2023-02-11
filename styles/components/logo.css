@@ -1,0 +1,12 @@
+.logo {
+    color: var(--clr1);
+    font-family:eurofurence;
+    font-size: 2.5rem;
+     
+    /* letter-spacing: 0.2em;
+    text-transform: uppercase; */
+}
+.logo::after{
+    content:'.';
+    color: var(--clr0);
+}

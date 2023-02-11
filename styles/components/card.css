@@ -1,0 +1,75 @@
+.card {
+    display: grid;
+    gap: 40px;
+    margin-block-end: 80px;
+}
+
+.main-content {
+    border-inline: 1px solid var(--clr3);
+}
+
+.card:first-child {
+    margin-block: 80px;
+}
+
+.card-title {
+    color: var(--clr7);
+    font-size: 1.75rem;
+}
+
+.card-text {
+    color: var(--clr6);
+    font-size: 1rem;
+}
+
+.btn-cont-read {
+    width: 186px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid var(--clr3);
+    background-color: var(--clr1);
+    cursor: pointer;
+    color: var(--clr9);
+}
+
+.btn-cont-read:hover {
+    width: 210px;
+    border: 2px solid var(--clr0);
+    color: var(--clr0);
+}
+
+.card button:hover::after {
+    content: ' →';
+}
+
+.btn-page-container {
+    border-block-start: 1px solid var(--clr3);
+    height: 75px;
+}
+
+.btn-page-container button {
+    font-family: lato-bold;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--clr5);
+    border: none;
+    cursor: pointer;
+    /* margin-block-start: 30px; */
+}
+
+.prev-btn {
+    margin-inline-start: 55px;
+}
+
+.next-btn {
+    margin-inline-end: 55px;
+}
+
+.prev-btn::before {
+    content: '← ';
+}
+
+.next-btn::after {
+    content: ' →';
+}

@@ -1,0 +1,26 @@
+.main-header {
+    /* display: grid;
+    grid-auto-flow: column; */
+    height:4.125rem;
+    background-color: var(--clr8);
+    text-transform: uppercase;
+    color: var(--clr1);
+}
+
+h1 {
+    margin: 0 60px 40px 0;
+  }
+  .main-header .main-menu a {
+    display: flex;
+    padding: 38px 40px;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .ul {
+    background-color: var(--clr8);
+  }
+  .main-header .main-menu a:hover {
+    color: var(--clr0);
+    border-block-end: 6px solid var(--clr0);
+  }
